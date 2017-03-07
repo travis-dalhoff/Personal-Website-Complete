@@ -1,0 +1,182 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #e8900c;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 4em;
+    margin: 0;
+}
+
+.page-wrap {
+    min-height: 100%;
+    position: relative;
+}
+
+.header {
+    background-image: url("../img/logo2.png");
+    background-color: #ffcc0d;
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position-y: 3em;
+    background-position-x: center;
+    width: 100%;
+    height: 20em;
+    margin: -2em auto;
+    border-bottom-color: #faf7fc;
+    border-bottom: solid;
+}
+
+/*.logo {
+    background-image: url("../img/logo2.png");
+    background-size: 75%;
+    background-position-y: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 15em;
+    width: 30em;
+    margin: -7em auto;
+    text-align: center;
+    background-color: #ffcc0d;
+    border-style: solid;
+    border-color: #402b10;
+}*/
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+}
+    
+.main {
+    width: 32.8%;
+}
+
+#intro {
+    margin-top: 8em;
+    text-align: center;
+}
+
+#nav-group-1 {
+    margin-top: 8em;
+}
+
+#nav-group-2 {
+    margin-top: 8em;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+    margin: 1em auto;
+    font-family: 'Rancho', cursive;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2em;
+    color: #65def1;
+    text-align: center;
+}
+
+#hi {
+    font-family: 'Rancho', cursive;
+    font-size: 2em;
+    margin-top: -0.5em;
+    color: #171000;
+}
+
+a:hover {
+    font-style: italic;
+    font-weight: bold;
+}
+
+footer {
+    position:absolute;
+    bottom: 0;
+    margin-bottom: 0em;
+    height: 4em;
+    width:100%;
+    font-size: 1.3em;
+    height: 2em;
+    text-align: center;
+    font-family: 'Rancho', cursive;
+    padding: 0;
+}
+
+#copyright {
+    margin-bottom: -1em;
+}
+
+#email {
+}
+
+@media (max-width: 1400px) {
+    .header {
+        background-position-y: 3em;
+        background-size: 30%
+    }
+}
+}
+
+@media (max-width: 1300px) {
+    .header {
+        background-position-y: 3em;
+        background-size: 38%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .header {
+        background-position-y: 3em;
+        background-size: 35%
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .header {
+        background-position-y: 4em;
+        background-size: 38%;
+    }
+
+}
+
+@media (max-width: 850px) {
+    .header {
+        background-position-y: 4em;
+        background-size: 45%
+    }
+
+
+@media (max-width: 720px) {
+
+    footer {
+        position: absolute;;
+    }
+
+    .header {
+        background-position-y: 4em;
+        background-size: 50%;
+    }
+
+
+}///////////////////*
+
+Website Color Schemes:
+#402B10
+#FFCC0d
+#FFB30D
+#39ACE6
+#FAF7FC
+
+*////////////////////
+    
