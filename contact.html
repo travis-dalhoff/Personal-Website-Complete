@@ -1,3 +1,22 @@
+<!--<?php
+
+if($_POST["submit"]) {
+    $recipient="tdalhoff@live.com";
+    $subject="Form to email message";
+    $senderfirstName=$_POST["firstname"];
+    $senderlastname=$_POST["lastname"];
+    $senderEmail=$_POST["email"];
+    $message=$_POST["comments"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+
+?>-->
+
 <DOCTYPE! html>
 
 <html>
@@ -7,7 +26,7 @@
     <title> Travis Dalhoff | Front End Developer </title>
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Neuton|Rancho|Rock+Salt" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Actor|Architects+Daughter|Inconsolata|Kavivanar|Pangolin|Roboto|Walter+Turncoat" rel="stylesheet"> 
 
 </head>
 
@@ -21,10 +40,10 @@
 
         <div class="about-nav">
                  <ul class="horizontal-nav">
-                    <li><a href="travis.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="games.html">Games</a></li>
-                    <li><a href="links.html">Links</a></li>
+                    <li class="other-nav"><a href="travis.html">Home</a></li>
+                    <li class="other-nav"><a href="about.html">About Me</a></li>
+                    <li class="other-nav"><a href="games.html">Games</a></li>
+                    <li class="other-nav"><a href="links.html">Links</a></li>
                  </ul> 
         </div>
 
@@ -40,7 +59,7 @@
             </div>
 
             <div class="contact-form">
-                <form id="contact-form">
+                <form method="post" action="contact.php" id="contact-form">
 
                     <label for="firstname">First Name</label>
                     <input type="text" id="firstname" name="firstname">
@@ -49,7 +68,7 @@
                     <input type="text" id="lastname" name="lastname">
 
                     <label for="email">Email Address</label>
-                    <input type="text" id="email" name="lastname">
+                    <input type="text" id="email" name="email">
 
                     <label for="comments">Comments</label>
                     <textarea id="comments" name="comments"></textarea>

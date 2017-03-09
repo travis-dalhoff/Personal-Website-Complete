@@ -19,12 +19,12 @@ body {
 .header {
     background-image: url("../img/logo2.png");
     background-color: #ffcc0d;
-    background-size: 25%;
+    background-size: 20%;
     background-repeat: no-repeat;
     background-position-y: 3em;
     background-position-x: center;
     width: 100%;
-    height: 18em;
+    height: 16em;
     margin: -2em auto;
     border-bottom-color: #faf7fc;
     border-bottom: solid;
@@ -59,21 +59,42 @@ ul {
 }
 
 li {
+    text-align: center; 
+}
+
+.home-nav {
     list-style-type: none;
     text-align: center;
     margin: 1em auto;
-    font-family: 'Rancho', cursive;
+    font-family: 'Pangolin', cursive;
+    font-size: .8em;
+    border: solid;
+    border-radius: 75%;
+    width: 35%;
+    background-color: #ffcc0d;
+}
+
+.other-nav {
+    list-style-type: none;
+    margin: 1.5em auto;
+    font-family: 'Pangolin', cursive;
+    font-size: .8em;
+    border: solid;
+    border-radius: 75%;
+    background-color: #ffcc0d;
+    width: 12%;
+    text-align: center;
 }
 
 a {
     text-decoration: none;
     font-size: 2em;
-    color: #65def1;
+    color: #171000;
     text-align: center;
 }
 
 #hi {
-    font-family: 'Rancho', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 2em;
     margin-top: -0.5em;
     color: #171000;
@@ -90,10 +111,10 @@ footer {
     margin-bottom: 0em;
     height: 4em;
     width:100%;
-    font-size: 1.3em;
+    font-size: 1.1em;
     height: 2em;
     text-align: center;
-    font-family: 'Rancho', cursive;
+    font-family: 'Roboto', sans-serif;
     padding: 0;
 }
 
@@ -128,7 +149,7 @@ footer {
 
 #about-para {
     /*text-align: center;*/
-    font-family: 'Rancho', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.7em;
     margin-right: 2em;
     margin-top: 1em;
@@ -159,7 +180,8 @@ footer {
 
 .contact-form {
     border: solid;
-    /*background-color: #39ace6;*/
+    border-color: #39ace6;
+    border-radius: 15%;
     width: 25%;
     margin-left: 2em; 
     padding: 1em;
@@ -171,13 +193,13 @@ footer {
 }
 
 #contact-para {
-    font-family: 'Rancho', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.7em;
 }
 
 input[type=text] {
     height: 2em; 
-    font-family: 'Rancho', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 1em;
     background-color: #faf7fc;
 }
@@ -191,18 +213,41 @@ input[type=submit] {
     border-radius: 10%;
     border-style: none;
     align-self: center;
-    font-family: 'Rancho', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 1em;
 }
 
 label {
     font-size: 1.5em;
-    font-family: 'Rancho', cursive;
+    font-family: 'Roboto', sans-serif;
 }
 
 textarea {
     background-color: #faf7fc;
     height: 3em;
+}
+
+/**********Games Styles****************/
+
+.games-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.games-desc {
+    width: 35%;
+    text-align: center;
+}
+
+.games-links {
+    width: 65%;
+    background-color: yellow; 
+}
+
+#game-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    margin: 3em;
 }
 
 /**********MEDIA QUERIES***************/
@@ -265,5 +310,20 @@ Website Color Schemes:
 #FFB30D
 #39ACE6
 #FAF7FC
+#171000
 
 ************************/
+
+/***********************
+
+Fonts:
+
+font-family: 'Roboto', sans-serif; GOOD
+font-family: 'Inconsolata', monospace; NO
+font-family: 'Architects Daughter', cursive;  NO
+font-family: 'Pangolin', cursive; GOOD
+font-family: 'Walter Turncoat', cursive;  NO
+font-family: 'Kavivanar', cursive; NO
+font-family: 'Actor', sans-serif; GOOD
+
+**********************/
