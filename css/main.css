@@ -60,6 +60,7 @@ ul {
 
 li {
     text-align: center; 
+    list-style-type: none;
 }
 
 .home-nav {
@@ -174,7 +175,7 @@ footer {
 }
 
 .contact-info {
-    width: 25%;
+    width: 40%;
     text-align: center;
 }
 
@@ -190,6 +191,16 @@ footer {
 #contact-form {
     display: flex; 
     flex-direction: column;
+}
+
+.contact-method {
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-method p {
+    vertical-align: center;
+    margin: 0 auto;
 }
 
 #contact-para {
@@ -225,6 +236,16 @@ label {
 textarea {
     background-color: #faf7fc;
     height: 3em;
+}
+
+#linkedin {
+    width: 2em;
+    height: 2em;
+}
+
+#twitter {
+    width: 1.5em;
+    height: 1.5em;
 }
 
 /**********Games Styles****************/
