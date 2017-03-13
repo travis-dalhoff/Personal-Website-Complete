@@ -50,17 +50,16 @@ if($_POST["submit"]) {
         <div class="contact-wrap">
 
             <div class="contact-info">
-                <!--<p id="contact-para">You can get in touch with me using the form to the right or by through one of the following sites:</p>
-                <ul>
-                    <li><a href="linkedin.com/in/tdalhoff"><img id="linkedin" src="img/linkedin.png"></a></li>
-                    <li><a href="twitter.com/travd_official"><img id="twitter" src="img/twitter.png"</a></li>
-                    <li><a href="tdalhoff@live.com">tdalhoff@live.com</a></li>
-                </ul>-->
                 <p id="contact-para">Fill out the from to send me a message. You can also:</p>
-                <p class="contact-method">Connect with me on LinkedIn: <a href="linkedin.com/in/tdalhoff"><img id="linkedin" src="img/linkedin.png"></a></p>
-                <p class="contact-method">Find me on Twitter:  <a href="twitter.com/travd_official"><img id="twitter" src="img/twitter.png"></a></p>
-                <p class="contact-method">Send me an email at tdalhoff@live.com</p>
-
+                <div class="contact-method">
+                    <p>Connect with me on LinkedIn:</p>
+                    <a href="linkedin.com/in/tdalhoff"><img id="linkedin" src="img/linkedin.png"></a>
+                </div>
+                <div class="contact-method">
+                    <p>Find me on Twitter:</p>
+                    <a href="twitter.com/travd_official"><img id="twitter" src="img/twitter.png"></a>
+                </div>
+                <p id ="email-para" class="contact-method">Send me an email at tdalhoff@live.com</p>
             </div>
 
             <div class="contact-form">
@@ -90,6 +89,8 @@ if($_POST["submit"]) {
         </footer>
 
     </div>
+
+    
 
 </body>
 

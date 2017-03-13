@@ -30,15 +30,35 @@
 
         <div class="about-wrapper">
             <div class="picture">
-                <img id="my-pic" src="img/pic.jpg" alt="Picture of Travis">
+                <img id="my-pic" src="img/ralph.jpg" alt="Picture of Travis">
             </div>
 
             <div class="about">
                 <p id="about-para">
-                    Hi, thanks for checking out my page. I'm a student at CodeLouisville learning front end development. I have experience working with HTML, CSS, JavaScript, jQuery, AJAX, and building games using Phaser. You can check out my projects at my <a id="github" href="https://github.com/travis-dalhoff">Github profile</a>. I'm going to continue in the CodeLouisville .Net program after my front end class ends and I'm looking forward to awesome opportunities as a junior developer. In addition to being a junior developer, I'm also a veteran, frequent concert-goer, and dog parent to Ella, Diego, and Lemon Drop. If you have any questions, would like to see a copy of my resume, want to talk coding and development, or just wax philisophical, feel free to contact me <a id="here" href="contact.html">here</a>.
+                    Hi, thanks for checking out my page. I'm a student at CodeLouisville learning front end development. I have experience working with HTML, CSS, JavaScript, jQuery, AJAX, and building games using Phaser. You can check out my projects at my <a id="github" href="https://github.com/travis-dalhoff">Github profile</a>. I'm going to continue in the CodeLouisville .Net program after my front end class ends and I'm looking forward to awesome opportunities as a junior developer. In addition to being a junior developer, I'm also a veteran, frequent concert-goer, and dog parent to <a href="#ellaModal" role="button" id="ellaLink" class="btn">Ella</a>, <a href="#diegoModal" role="button" id="diegoLink" class="btn">Diego</a>, and <a href="#lemonModal" role="button" id="lemonLink" class="btn">Lemon Drop</a>. If you have any questions, would like to see a copy of my resume, want to talk coding and development, or just wax philisophical, feel free to contact me <a id="here" href="contact.html">here</a>.
                 </p>
             </div>
+        </div>
 
+        <div id="ellaModal" class="modal">
+                <div class="modal-content">
+                    <span class="ellaClose">&times;</span>
+                    <p id="ella-pic"></p>
+                </div>
+        </div>
+
+        <div id="diegoModal" class="modal">
+                <div class="modal-content">
+                    <span class="diegoClose">&times;</span>
+                    <p id="diego-pic"></p>
+                </div>
+        </div>
+
+        <div id="lemonModal" class="modal">
+                <div class="modal-content">
+                    <span class="lemonClose">&times;</span>
+                    <p id="lemon-pic"></p>
+                </div>
         </div>
 
         <footer>
@@ -47,6 +67,8 @@
         </footer>
 
     </div>
+
+    <script src="js/main.js"></script>
 
 </body>
 

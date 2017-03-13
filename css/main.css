@@ -153,7 +153,7 @@ footer {
     font-family: 'Roboto', sans-serif;
     font-size: 1.7em;
     margin-right: 2em;
-    margin-top: 1em;
+    margin-top: 0em;
     color: #171000;
 }
 
@@ -194,13 +194,24 @@ footer {
 }
 
 .contact-method {
-
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: center;
     font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+}
+
+.contact-method a {
+    margin-right: 3em;
 }
 
 .contact-method p {
-    vertical-align: center;
-    margin: 0 auto;
+    margin-left: 4em;
+}
+
+#email-para {
+    margin-left: 4em;
 }
 
 #contact-para {
@@ -239,13 +250,63 @@ textarea {
 }
 
 #linkedin {
-    width: 2em;
-    height: 2em;
+    width: 1.5em;
+    height: 1.5em;
 }
 
 #twitter {
     width: 1.5em;
     height: 1.5em;
+}
+
+.btn {
+    font-size: 1em;
+    text-decoration: underline;
+}
+
+/**********Modal Style**********/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */   
+}
+
+.modal-content {
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%;
+    height: 35%;
+    background-image: url(../img/ralph.jpg);
+    background-size: 100%;
+    box-shadow: 30px 30px 15p #262626;
+}
+
+.modal-content h1 {
+    text-align: center;
+}
+  
+.ellaClose., .diegoClose, .lemonClose {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.ellaClose:hover, .ellaClose:focus,
+.diegoClose:hover, .diegoClose:focus,
+.lemonClose:hover, .LemonClose:focus {
+    text-decoration: none;
+    cursor: pointer; 
 }
 
 /**********Games Styles****************/
