@@ -24,7 +24,7 @@ body {
     background-position-y: 3em;
     background-position-x: center;
     width: 100%;
-    height: 16em;
+    height: 18em;
     margin: -2em auto;
     border-bottom-color: #faf7fc;
     border-bottom: solid;
@@ -133,13 +133,15 @@ footer {
 }
 
 .picture {
-    width: 25%;
-    height: 33%;
+    width: 20%;
+    height: 40%;
     text-align: center;
 }
 
 #my-pic {
     border-radius: 25%;
+    height: 100%;
+    width: 100%;
 }
 
 .about {
@@ -279,21 +281,6 @@ textarea {
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.8); /* Black w/ opacity */   
 }
-
-.modal-content {
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 25%;
-    height: 35%;
-    background-image: url(../img/ralph.jpg);
-    background-size: 100%;
-    box-shadow: 30px 30px 15p #262626;
-}
-
-.modal-content h1 {
-    text-align: center;
-}
   
 .ellaClose., .diegoClose, .lemonClose {
     color: #aaaaaa;
@@ -307,6 +294,33 @@ textarea {
 .lemonClose:hover, .LemonClose:focus {
     text-decoration: none;
     cursor: pointer; 
+}
+
+.modal-content-ella {
+    height: 65%;
+    width: 25%;
+    background-image: url(../img/ella1.jpg);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-size: 100%;
+}
+
+.modal-content-diego {
+    height: 65%;
+    width: 25%;
+    background-image: url(../img/diego.jpg);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-size: 100%;
+}
+
+.modal-content-lemondrop {
+    height: 65%;
+    width: 25%;
+    background-image: url(../img/lemondrop.jpg);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-size: 100%;
 }
 
 /**********Games Styles****************/
