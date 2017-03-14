@@ -133,7 +133,7 @@ footer {
 }
 
 .picture {
-    width: 20%;
+    width: 22%;
     height: 40%;
     text-align: center;
 }
@@ -145,7 +145,7 @@ footer {
 }
 
 .about {
-    width: 75%;
+    width: 70%;
     height: 33%;
     text-align: center;
 }
@@ -154,7 +154,7 @@ footer {
     /*text-align: center;*/
     font-family: 'Roboto', sans-serif;
     font-size: 1.7em;
-    margin-right: 2em;
+    margin-right: 1em;
     margin-top: 0em;
     color: #171000;
 }
@@ -346,20 +346,53 @@ textarea {
     margin: 3em;
 }
 
+/**********Link Styles**********/
+
+.link-wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.links {
+    width: 25%;
+    text-align: center;
+}
+
+.links ul li a {
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.links h3 {
+    margin-bottom: -0.5em;
+    text-decoration: underline;
+    font-family: 'Roboto', sans-serif;
+}
+
 /**********MEDIA QUERIES***************/
 
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
     .header {
         background-position-y: 3em;
-        background-size: 30%
+        background-size: 25%
     }
 }
-}
 
-@media (max-width: 1300px) {
+
+@media (max-width: 1197px) {
     .header {
         background-position-y: 3em;
-        background-size: 38%;
+        background-size: 32%;
+    }
+
+    .home-nav {
+        font-size: 0.6em;
+        width: 40%;
+    }
+
+    #hi {
+        font-size: 1.75em;
     }
 }
 
@@ -374,7 +407,7 @@ textarea {
 
     .header {
         background-position-y: 4em;
-        background-size: 38%;
+        background-size: 35%;
     }
 
 }
@@ -382,7 +415,11 @@ textarea {
 @media (max-width: 850px) {
     .header {
         background-position-y: 4em;
-        background-size: 45%
+        background-size: 35%
+    }
+
+    #hi {
+        font-size: 1.5em;
     }
 
 
@@ -396,6 +433,16 @@ textarea {
         background-position-y: 4em;
         background-size: 50%;
     }
+}
+
+@media (max-width: 640px) {
+    .header {
+        height: 18em;
+    }
+
+    
+
+}
 
 
 /***********************
