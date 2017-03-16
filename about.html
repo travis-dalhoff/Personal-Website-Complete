@@ -7,7 +7,8 @@
     <title> Travis Dalhoff | Front End Developer </title>
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Actor|Architects+Daughter|Inconsolata|Kavivanar|Pangolin|Roboto|Walter+Turncoat" rel="stylesheet"> 
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" /> 
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Crimson+Text|Gloria+Hallelujah|Indie+Flower|Permanent+Marker|Righteous|Satisfy|Shadows+Into+Light|VT323|Varela+Round" rel="stylesheet">  
 
 </head>
 
@@ -29,13 +30,26 @@
         </div>
 
         <div class="about-wrapper">
-            <div class="picture">
+            <!--<div class="picture">
                 <img id="my-pic" src="img/Travis1.jpeg" alt="Picture of Travis">
+            </div>-->
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+	            <div class="flipper">
+		            <div class="front">
+			            <img class="my-pic" src="img/Travis1_test.jpg">
+		            </div>
+		            <div class="back">
+			        <img class="my-pic" src="img/lemondrop_test.jpg">
+		            </div>
+	            </div>
             </div>
 
             <div class="about">
-                <p id="about-para">
-                    Hi, thanks for <blink>checking</blink> out my page. I'm a student at CodeLouisville learning front end development. I have experience working with HTML, CSS, JavaScript, jQuery, AJAX, and building games using Phaser. You can check out my projects at my <a id="github" href="https://github.com/travis-dalhoff">Github profile</a>. I'm going to continue in the CodeLouisville .Net program after my front end class ends and I'm looking forward to awesome opportunities as a junior developer. In addition to being a junior developer, I'm also a veteran, frequent concert-goer, and dog parent to <a href="#ellaModal" role="button" id="ellaLink" class="btn">Ella</a>, <a href="#diegoModal" role="button" id="diegoLink" class="btn">Diego</a>, and <a href="#lemonModal" role="button" id="lemonLink" class="btn">Lemon Drop</a>. If you have any questions, would like to see a copy of my resume, want to talk coding and development, or just wax philisophical, feel free to contact me <a id="here" href="contact.html">here</a>.
+                <p class="about-para">
+                    Hi, thanks for checking out my page. I'm a student at &lt;code&gt;Louisville learning front end development. I have experience working with HTML, CSS, JavaScript, jQuery, AJAX, and building games using Phaser. You can check out my projects at my <a id="github" href="https://github.com/travis-dalhoff">Github profile</a>. I'm going to continue in the &lt;code&gt;Louisville .Net program after my front end class ends and I'm looking forward to awesome opportunities as a junior developer. 
+                </p>
+                <p class="about-para">     
+                    In addition to being a junior developer, I'm also a veteran, frequent concert-goer, and dog parent to <a href="#ellaModal" role="button" id="ellaLink" class="btn">Ella</a>, <a href="#diegoModal" role="button" id="diegoLink" class="btn">Diego</a>, and <a href="#lemonModal" role="button" id="lemonLink" class="btn">Lemon Drop</a>. If you have any questions, would like to see a copy of my resume, want to talk coding and development or just wax philisophical, feel free to contact me <a id="here" href="contact.html">here</a>.
                 </p>
             </div>
         </div>
