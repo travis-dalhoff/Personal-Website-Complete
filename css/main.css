@@ -20,7 +20,7 @@ body {
 .header {
     background-image: url("../img/logo2.png");
     background-color: #FFCC0d;
-    background-size: 100%;
+    background-size: 25%;
     background-repeat: no-repeat;
     background-position-y: 3em;
     background-position-x: center;
@@ -100,6 +100,10 @@ li {
     text-align: center;
 }
 
+.horizontal-nav {
+    display: flex;
+}
+
 a {
     text-decoration: none;
     font-size: 2em;
@@ -174,10 +178,6 @@ footer {
     margin-right: 1em;
     margin-top: 0em;
     color: #171000;
-}
-
-.horizontal-nav {
-    display: flex;
 }
 
 #here, #github {
@@ -369,6 +369,10 @@ textarea {
     text-decoration: underline;
 }
 
+/***************Mobile Nave Menu****************/
+
+
+
 /**********Modal Style**********/
 
 .modal {
@@ -434,20 +438,33 @@ textarea {
 }
 
 .games-desc {
-    width: 35%;
+    width: 50%;
     text-align: center;
 }
 
 .games-links {
-    width: 65%;
-    background-color: yellow; 
+    width: 50%;
+    margin-top: 5em;
 }
 
 #game-description {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Permanent Marker', cursive;
     font-size: 1.5em;
     margin: 3em;
 }
+
+.game-links {
+    height: 20%;
+    width: 25%;
+}
+
+#game-div {
+    margin: 2em auto;
+    height: 40%;
+    width: 40%;
+}
+
+
 
 /**********Link Styles**********/
 
@@ -476,6 +493,14 @@ textarea {
 
 /**********MEDIA QUERIES***************/
 
+@media (max-width: 1950px) {
+    .header {
+        background-size: 22%;
+        height: 18em;
+    }
+}
+
+
 @media (max-width: 1440px) {
     .header {
         background-position-y: 3em;
@@ -497,6 +522,20 @@ textarea {
 
     #hi {
         font-size: 1.75em;
+    }
+
+    .about-wrapper {
+        flex-direction: column;
+    }
+
+    .about {
+        width: 100%;
+        margin-top: -15em;
+    }
+
+    .flip-container {
+        width: 35%;
+        margin: 0 auto;
     }
 }
 
@@ -525,7 +564,7 @@ textarea {
     #hi {
         font-size: 1.5em;
     }
-
+}
 
 @media (max-width: 720px) {
 
@@ -537,15 +576,44 @@ textarea {
         background-position-y: 4em;
         background-size: 50%;
     }
+
+    .about-wrapper {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 640px) {
-    .header {
-        height: 18em;
+    .about-nav {
+        margin-top: 3em;
+        text-align: center;
     }
 
-    
+    .links {
+        width: 100%;
+    }
 
+    .link-wrap {
+        flex-direction: column;
+    }
+    
+    .header {
+        height: 12em;
+    }
+
+    .about-nav ul {
+        display: none;
+    }
+
+    .about-wrapper {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 720px) {
+    
+    .about-nav select, .about-nav button {
+        display: none;
+    }
 }
 
 
