@@ -9,12 +9,11 @@ body {
     width: 100%;
     padding-bottom: 4em;
     margin: 0;
-    border-image-source
 }
 
 .page-wrap {
-    min-height: 100%;
-    position: relative;
+    height: 100%;
+    width: 100%;
 }
 
 .header {
@@ -42,12 +41,13 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    width: 100%;
+    width: 85%;
 }
 
 #intro {
-    margin-top: 5em;
+    margin-top: 3em;
     text-align: center;
+    width: 100%;
 }
 
 #nav-group-1 {
@@ -171,7 +171,7 @@ footer {
     text-align: center;
 }
 
-.about-para {
+.about-para-1, .about-para-2 {
     /*text-align: center;*/
     font-family: 'Permanent Marker', cursive;
     font-size: 1.4em;
@@ -566,28 +566,199 @@ textarea {
     }
 }
 
-@media (max-width: 720px) {
+/**************************************
+TABLET SCREEN MEDIA QUERIES
+**************************************/
+
+@media (max-width: 768px) {
 
     footer {
-        position: absolute;;
+        display: none;
     }
 
     .header {
         background-position-y: 4em;
-        background-size: 50%;
+        background-size: 40%;
     }
 
     .about-wrapper {
         flex-direction: column;
     }
+
+    .about {
+        margin-top: -5em;
+        margin-bottom: 2em;
+    }
+
+    .about-para-1, .about-para-2 {
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .about-para-2 {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .games-desc {
+        width: 60%;
+    }
+
+    #game-description {
+        margin: 0 auto;
+        padding: 1em;
+    }
+
+    .games-links {
+        width: 40%
+    }
+
+    .games-links img {
+        width: 40%;
+        height: 10%;
+    }
+
+
 }
 
-@media (max-width: 640px) {
+
+/*****************************************
+SMALL SCREEN MEDIA QUERIES
+*****************************************/
+
+@media (max-width: 420px) {
     .about-nav {
         margin-top: 3em;
         text-align: center;
     }
 
+    .about-nav select, .about-nav button {
+        font-family: 'Architects Daughter', cursive;
+        font-weight: bold;
+    }
+
+    .about-nav ul {
+        display: none;
+    }
+    
+    .header {
+        width: 100%;
+        height: 12em;
+        background-size: 50%;
+    }
+
+
+/***********************************************
+HOME PAGE SMALL SCREEN STYLE
+***********************************************/
+    .intro {
+        width: 100%;
+    }
+
+    #intro {
+        margin-top: 1.5em;
+    }
+
+    #hi {
+        font-size: 1em;
+    }
+
+/***********************************************
+ABOUT PAGE SMALL SCREEN STYLE
+***********************************************/
+    .page-wrap {
+        height: 100%;
+        width: 100%;
+    }
+
+    .about-wrapper {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .flipper {
+        height: 100%;
+        width: 100%;
+    }
+
+    .flip-container {
+        width: 55%;
+        height: 40%;
+        margin-top: -2em;
+    }
+
+    .flip-container hover {
+        margin: 0 auto;
+    }
+
+    .flipper, .front, .back {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .front, .back {
+        height: 100%;
+        width: 100%;
+    }
+
+    .flip-container img {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+    }
+
+    .about {
+        margin: 0 auto;
+        width: 85%;
+    }
+
+    .about-para-1 {
+        margin: -3.5em auto;
+        font-size: 0.75em;
+        width: 100%;
+    }
+
+    .about-para-2 {
+        font-size: 0.75em;
+        margin: 4.5em auto;
+    }
+/***********************************************
+CONTACT PAGE SMALL SCREEN STYLE
+***********************************************/
+    .contact-wrap {
+        flex-direction: column;
+        width: 95%;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+        margin: 1em auto;
+        padding: 0;
+    }
+
+    .linkedin a {
+        margin-top: -0.15em;
+    }
+
+    .twitter a {
+        margin-top: -0.15em;
+    }
+
+    #contact-para {
+        font-size: 1em;
+    }
+
+    #twitter-para, #linkedin-para, #email-para {
+        font-size: 0.8em;
+    }
+
+/***********************************************
+LINKS PAGE SMALL SCREEN STYLE
+***********************************************/
     .links {
         width: 100%;
     }
@@ -595,21 +766,74 @@ textarea {
     .link-wrap {
         flex-direction: column;
     }
-    
-    .header {
-        height: 12em;
+
+    .links h3 {
+        font-size: 1em;
     }
 
-    .about-nav ul {
+    .links ul li a {
+        font-size: 0.8em;
+    }
+
+/**********************************************
+GAMES PAGE SMALL SCREEN STYLE
+**********************************************/
+
+    .games-wrapper {
+        flex-direction: column;
+        margin-top: 1em;
+    }
+
+    .games-desc {
+        width: 100%;
+    }
+
+    #game-description {
+        font-size: 1em;
+        width: 95%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .games-links {
+        width: 100%;
+        margin-top: 2em;
+    }
+
+    .games-links img {
+        width: 30%;
+        height: 15%;
+    }
+
+/**********************************************
+BREAKOUT SMALL SCREEN STYLE
+**********************************************/
+
+    .wrapper {
+        height: 100%;
+        width: 100%;
+    }
+
+    #game-div {
+        margin-top: 2em;
+        height: 35%;
+        width: 65%;
+    }
+
+/**********************************************
+HIDE THE FOOTER ON SMALL SCREENS
+**********************************************/
+
+    footer {
         display: none;
     }
 
-    .about-wrapper {
-        flex-direction: column;
-    }
 }
 
-@media (min-width: 720px) {
+/************************************************************************
+Hide the navigation select menu and button on screens larger than 420px
+*************************************************************************/
+@media (min-width: 420px) {
     
     .about-nav select, .about-nav button {
         display: none;
