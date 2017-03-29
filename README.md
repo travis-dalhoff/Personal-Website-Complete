@@ -1,5 +1,5 @@
 # Personal-Website-Complete
-This is my working personal website and part of the submission for my CodeLouisville project.
+This is my working personal website and my final project for my CodeLouisville project submission.
 
 The primary purpose of the website is to demonstrate to potential employers my skills as a front end web developer and serve as 
 a portfolio for my projects. It also has the secondary purpose of reaching out to others in the web development field for feedback
