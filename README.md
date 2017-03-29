@@ -18,4 +18,4 @@ help build the Breakout game can be found at https://developer.mozilla.org/en-US
 
 If you have any questions, send me an email at tdalhoff@live.com
 
-THANKS <code>LOUISVILLE!!!!!!!!
+THANKS &lt;code&gt;LOUISVILLE!!!!!!!!
